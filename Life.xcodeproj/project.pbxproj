@@ -20,6 +20,10 @@
 		040372572A400291000348E5 /* FirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372562A400291000348E5 /* FirstStepView.swift */; };
 		040372592A413AD7000348E5 /* SecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372582A413AD7000348E5 /* SecondStepView.swift */; };
 		0403725D2A4142BA000348E5 /* ThirdStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403725C2A4142BA000348E5 /* ThirdStepView.swift */; };
+		0403725F2A414B3A000348E5 /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403725E2A414B3A000348E5 /* TapView.swift */; };
+		040372612A414F0C000348E5 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372602A414F0B000348E5 /* DiaryView.swift */; };
+		040372632A42822F000348E5 /* DiaryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372622A42822F000348E5 /* DiaryTitleView.swift */; };
+		040372652A429486000348E5 /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372642A429486000348E5 /* PickerData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		040372232A3FF7E5000348E5 /* Lifesum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifesum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		040372232A3FF7E5000348E5 /* Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		040372262A3FF7E5000348E5 /* LifesumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumApp.swift; sourceTree = "<group>"; };
 		040372282A3FF7E5000348E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0403722A2A3FF7E8000348E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0403722D2A3FF7E8000348E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		040372332A3FF7E8000348E5 /* LifesumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifesumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		040372332A3FF7E8000348E5 /* LifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040372372A3FF7E8000348E5 /* LifesumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumTests.swift; sourceTree = "<group>"; };
-		0403723D2A3FF7E8000348E5 /* LifesumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifesumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0403723D2A3FF7E8000348E5 /* LifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		040372412A3FF7E8000348E5 /* LifesumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumUITests.swift; sourceTree = "<group>"; };
 		040372432A3FF7E8000348E5 /* LifesumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifesumUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		040372502A3FF7F2000348E5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,10 @@
 		040372562A400291000348E5 /* FirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepView.swift; sourceTree = "<group>"; };
 		040372582A413AD7000348E5 /* SecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepView.swift; sourceTree = "<group>"; };
 		0403725C2A4142BA000348E5 /* ThirdStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepView.swift; sourceTree = "<group>"; };
+		0403725E2A414B3A000348E5 /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
+		040372602A414F0B000348E5 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		040372622A42822F000348E5 /* DiaryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTitleView.swift; sourceTree = "<group>"; };
+		040372642A429486000348E5 /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +104,9 @@
 		040372242A3FF7E5000348E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				040372232A3FF7E5000348E5 /* Lifesum.app */,
-				040372332A3FF7E8000348E5 /* LifesumTests.xctest */,
-				0403723D2A3FF7E8000348E5 /* LifesumUITests.xctest */,
+				040372232A3FF7E5000348E5 /* Life.app */,
+				040372332A3FF7E8000348E5 /* LifeTests.xctest */,
+				0403723D2A3FF7E8000348E5 /* LifeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +121,10 @@
 				040372562A400291000348E5 /* FirstStepView.swift */,
 				040372582A413AD7000348E5 /* SecondStepView.swift */,
 				0403725C2A4142BA000348E5 /* ThirdStepView.swift */,
+				040372642A429486000348E5 /* PickerData.swift */,
+				0403725E2A414B3A000348E5 /* TapView.swift */,
+				040372602A414F0B000348E5 /* DiaryView.swift */,
+				040372622A42822F000348E5 /* DiaryTitleView.swift */,
 				040372522A3FF9FA000348E5 /* Color+hex.swift */,
 				0403722A2A3FF7E8000348E5 /* Assets.xcassets */,
 				0403722C2A3FF7E8000348E5 /* Preview Content */,
@@ -148,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		040372222A3FF7E5000348E5 /* Lifesum */ = {
+		040372222A3FF7E5000348E5 /* Life */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 040372472A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "Lifesum" */;
+			buildConfigurationList = 040372472A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "Life" */;
 			buildPhases = (
 				0403721F2A3FF7E5000348E5 /* Sources */,
 				040372202A3FF7E5000348E5 /* Frameworks */,
@@ -160,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = Lifesum;
+			name = Life;
 			productName = Lifesum;
-			productReference = 040372232A3FF7E5000348E5 /* Lifesum.app */;
+			productReference = 040372232A3FF7E5000348E5 /* Life.app */;
 			productType = "com.apple.product-type.application";
 		};
-		040372322A3FF7E8000348E5 /* LifesumTests */ = {
+		040372322A3FF7E8000348E5 /* LifeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0403724A2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifesumTests" */;
+			buildConfigurationList = 0403724A2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifeTests" */;
 			buildPhases = (
 				0403722F2A3FF7E8000348E5 /* Sources */,
 				040372302A3FF7E8000348E5 /* Frameworks */,
@@ -178,14 +190,14 @@
 			dependencies = (
 				040372352A3FF7E8000348E5 /* PBXTargetDependency */,
 			);
-			name = LifesumTests;
+			name = LifeTests;
 			productName = LifesumTests;
-			productReference = 040372332A3FF7E8000348E5 /* LifesumTests.xctest */;
+			productReference = 040372332A3FF7E8000348E5 /* LifeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0403723C2A3FF7E8000348E5 /* LifesumUITests */ = {
+		0403723C2A3FF7E8000348E5 /* LifeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0403724D2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifesumUITests" */;
+			buildConfigurationList = 0403724D2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifeUITests" */;
 			buildPhases = (
 				040372392A3FF7E8000348E5 /* Sources */,
 				0403723A2A3FF7E8000348E5 /* Frameworks */,
@@ -196,9 +208,9 @@
 			dependencies = (
 				0403723F2A3FF7E8000348E5 /* PBXTargetDependency */,
 			);
-			name = LifesumUITests;
+			name = LifeUITests;
 			productName = LifesumUITests;
-			productReference = 0403723D2A3FF7E8000348E5 /* LifesumUITests.xctest */;
+			productReference = 0403723D2A3FF7E8000348E5 /* LifeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0403721E2A3FF7E5000348E5 /* Build configuration list for PBXProject "Lifesum" */;
+			buildConfigurationList = 0403721E2A3FF7E5000348E5 /* Build configuration list for PBXProject "Life" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -237,9 +249,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				040372222A3FF7E5000348E5 /* Lifesum */,
-				040372322A3FF7E8000348E5 /* LifesumTests */,
-				0403723C2A3FF7E8000348E5 /* LifesumUITests */,
+				040372222A3FF7E5000348E5 /* Life */,
+				040372322A3FF7E8000348E5 /* LifeTests */,
+				0403723C2A3FF7E8000348E5 /* LifeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,14 +287,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040372612A414F0C000348E5 /* DiaryView.swift in Sources */,
 				0403725D2A4142BA000348E5 /* ThirdStepView.swift in Sources */,
 				040372292A3FF7E5000348E5 /* ContentView.swift in Sources */,
 				040372572A400291000348E5 /* FirstStepView.swift in Sources */,
+				040372632A42822F000348E5 /* DiaryTitleView.swift in Sources */,
 				040372532A3FF9FA000348E5 /* Color+hex.swift in Sources */,
 				040372512A3FF7F2000348E5 /* MainView.swift in Sources */,
 				040372592A413AD7000348E5 /* SecondStepView.swift in Sources */,
 				040372272A3FF7E5000348E5 /* LifesumApp.swift in Sources */,
 				040372552A3FFB99000348E5 /* firstLoginView.swift in Sources */,
+				0403725F2A414B3A000348E5 /* TapView.swift in Sources */,
+				040372652A429486000348E5 /* PickerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +324,12 @@
 /* Begin PBXTargetDependency section */
 		040372352A3FF7E8000348E5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 040372222A3FF7E5000348E5 /* Lifesum */;
+			target = 040372222A3FF7E5000348E5 /* Life */;
 			targetProxy = 040372342A3FF7E8000348E5 /* PBXContainerItemProxy */;
 		};
 		0403723F2A3FF7E8000348E5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 040372222A3FF7E5000348E5 /* Lifesum */;
+			target = 040372222A3FF7E5000348E5 /* Life */;
 			targetProxy = 0403723E2A3FF7E8000348E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,7 +520,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifesum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lifesum";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Life.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Life";
 			};
 			name = Debug;
 		};
@@ -523,7 +539,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lifesum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lifesum";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Life.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Life";
 			};
 			name = Release;
 		};
@@ -564,7 +580,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0403721E2A3FF7E5000348E5 /* Build configuration list for PBXProject "Lifesum" */ = {
+		0403721E2A3FF7E5000348E5 /* Build configuration list for PBXProject "Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040372452A3FF7E8000348E5 /* Debug */,
@@ -573,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		040372472A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "Lifesum" */ = {
+		040372472A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "Life" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				040372482A3FF7E8000348E5 /* Debug */,
@@ -582,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0403724A2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifesumTests" */ = {
+		0403724A2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0403724B2A3FF7E8000348E5 /* Debug */,
@@ -591,7 +607,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0403724D2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifesumUITests" */ = {
+		0403724D2A3FF7E8000348E5 /* Build configuration list for PBXNativeTarget "LifeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0403724E2A3FF7E8000348E5 /* Debug */,

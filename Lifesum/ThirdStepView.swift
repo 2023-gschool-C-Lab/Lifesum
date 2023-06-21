@@ -22,22 +22,21 @@ struct ThirdStepView: View {
             
             VStack{
                 HStack{
-                    Image(systemName: "lessthan")
                     
                     Rectangle()
                         .frame(width: 40,height: 3)
                         .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
+                        .foregroundColor(Color(hex: "71B55C"))
                     
                     Rectangle()
                         .frame(width: 40,height: 3)
                         .cornerRadius(7)
-                        .foregroundColor(Color.green)
+                        .foregroundColor(Color(hex: "71B55C"))
                     
                     Rectangle()
                         .frame(width: 40,height: 3)
                         .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
+                        .foregroundColor(Color(hex: "71B55C"))
                     
                     Rectangle()
                         .frame(width: 40,height: 3)
@@ -59,7 +58,6 @@ struct ThirdStepView: View {
                 
                 Text("What's your date of birth?")
                     .font(.system(size: 25))
-                
                 
                 
                 
@@ -89,6 +87,7 @@ struct ThirdStepView: View {
                 .tint(.black)
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

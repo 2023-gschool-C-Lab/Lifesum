@@ -14,14 +14,28 @@ struct firstLoginView: View {
         
         ZStack{
      
-            Color(hex: "C4CDC2")
+            Image("ddd")
+                .resizable()
                 .ignoresSafeArea()
             
             
         VStack{
-            Text("Lifesum")
-                .font(.system(size: 50))
-                .foregroundColor(Color.white)
+            HStack{
+                
+                Text("Lifesum")
+                    .font(.system(size: 50))
+                    .foregroundColor(Color.white)
+                
+                ZStack{
+                    
+                    Image(systemName: "circle")
+                        .foregroundColor(.white)
+                    
+                    Text("R")
+                        .font(.system(size: 10))
+                        .foregroundColor(Color.white)
+                }
+            }
             
                         
             Text("Healthy eating.")
@@ -41,7 +55,7 @@ struct firstLoginView: View {
                     Rectangle()
                         .frame(width: 330,height: 53)
                         .cornerRadius(8)
-                        .foregroundColor(.green)
+                        .foregroundColor((Color(hex: "71B55C")))
                     
                     Text("GET STARTED")
                         .foregroundColor(Color.white)
@@ -60,7 +74,7 @@ struct firstLoginView: View {
                 
                 Text("Log in")
                     .font(.system(size: 16))
-                    .foregroundColor(Color.green)
+                    .foregroundColor((Color(hex: "71B55C")))
             }
             }
         }

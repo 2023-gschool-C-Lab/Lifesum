@@ -19,140 +19,146 @@ struct FirstStepView: View {
     
     var body: some View {
         
-        ZStack{
-            
-            Color(hex: "F0EDE8")
-                .ignoresSafeArea()
-            
-            VStack{
-                HStack{
-                    Image(systemName: "lessthan")
+        NavigationView{
 
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color.green)
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                }
+            ZStack{
                 
-                Text("Let's get to know you better!")
-                    .font(.system(size: 13))
+                Color(hex: "F0EDE8")
+                    .ignoresSafeArea()
                 
-                
-                Text("What goal do you have")
-                    .font(.system(size: 25))
-                Text("in mind?")
-                    .font(.system(size: 25))
-
-                
-                
-                Button {
-                    if goalState == .loseWeight {
-                        goalState = .none
-                    } else {
-                        goalState = .loseWeight
-                    }
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 80)
-                            .cornerRadius(7)
-                            .foregroundColor(goalState == .loseWeight ? .green : .white)
-                        Text("Lose weight")
-                            .foregroundColor(goalState == .loseWeight ? .white : .black)
-                    }
-                }
-                .tint(.black)
-                
-                Button {
-                    if goalState == .maintainWeight {
-                        goalState = .none
-                    } else {
-                        goalState = .maintainWeight
-                    }
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 80)
-                            .cornerRadius(7)
-                            .foregroundColor(goalState == .maintainWeight ? .green : .white)
+                VStack{
+                    HStack{
                         
-                        Text("Maintain weight")
-                            .foregroundColor(goalState == .maintainWeight ? .white : .black)
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor((Color(hex: "71B55C")))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                    }
+                    
+                    Text("Let's get to know you better!")
+                        .font(.system(size: 13))
+                        .padding(.bottom, 50)
+                    
+                    
+                    Text("What goal do you have")
+                        .font(.system(size: 25))
+                    Text("in mind?")
+                        .font(.system(size: 25))
+                    
+                        .padding(.bottom, 40)
+                    
+                    
+                    Button {
+                        if goalState == .loseWeight {
+                            goalState = .none
+                        } else {
+                            goalState = .loseWeight
                         }
-                }
-                .tint(.black)
-
-                Button {
-                    if goalState == .gainWeight {
-                        goalState = .none
-                    } else {
-                        goalState = .gainWeight
+                    } label: {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 330,height: 80)
+                                .cornerRadius(7)
+                                .foregroundColor(goalState == .loseWeight ? .green : .white)
+                            Text("Lose weight")
+                                .foregroundColor(goalState == .loseWeight ? .white : .black)
+                        }
                     }
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 80)
-                            .cornerRadius(7)
-                            .foregroundColor(goalState == .gainWeight ? .green : .white)
+                    .tint(.black)
+                    
+                    Button {
+                        if goalState == .maintainWeight {
+                            goalState = .none
+                        } else {
+                            goalState = .maintainWeight
+                        }
+                    } label: {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 330,height: 80)
+                                .cornerRadius(7)
+                                .foregroundColor(goalState == .maintainWeight ? .green : .white)
+                            
+                            Text("Maintain weight")
+                                .foregroundColor(goalState == .maintainWeight ? .white : .black)
+                        }
+                    }
+                    .tint(.black)
+                    
+                    Button {
+                        if goalState == .gainWeight {
+                            goalState = .none
+                        } else {
+                            goalState = .gainWeight
+                        }
+                    } label: {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 330,height: 80)
+                                .cornerRadius(7)
+                                .foregroundColor(goalState == .gainWeight ? .green : .white)
+                            
+                            Text("Gain weight")
+                                .foregroundColor(goalState == .gainWeight ? .white : .black)
+                        }                            .padding(.bottom,180)
                         
-                        Text("Gain weight")
-                            .foregroundColor(goalState == .gainWeight ? .white : .black)
-                    }
-                }
-                .tint(.black)
-            
-                Text("We use this informationto calculate and provide you")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 13))
-                Text("with daily personlized recommendations.")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 13))
-                
-                Button {
-                    // 다음페이지로 넘어감
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 40)
-                            .cornerRadius(7)
-                            .foregroundColor(goalState == .none ? .white : .green)
                         
-                        Text("Next")
-                            .font(.system(size: 14))
-                            .foregroundColor(goalState == .none ? .black : .white)
-
                     }
+                    .tint(.black)
+                    
+                    Text("We use this informationto calculate and provide you")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 13))
+                    Text("with daily personlized recommendations.")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 13))
+                    
+                    
+                    NavigationLink {
+                        SecondStepView()
+                    } label: {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 330,height: 40)
+                                .cornerRadius(7)
+                                .foregroundColor(goalState == .none ? .white : .green)
+                            
+                            Text("Next")
+                                .font(.system(size: 14))
+                                .foregroundColor(goalState == .none ? .black : .white)
+                        }
+                    }
+                    .tint(.black)
+                    .padding(.top,10)
                 }
-                .tint(.black)
-
             }
         }
-        
+        .navigationBarBackButtonHidden()
     }
 }
 
@@ -161,3 +167,4 @@ struct FirstStepView_Previews: PreviewProvider {
         FirstStepView()
     }
 }
+

@@ -18,120 +18,124 @@ struct SecondStepView: View {
     
     var body: some View {
         
-        ZStack{
             
-            Color(hex: "F0EDE8")
-                .ignoresSafeArea()
-            
-            VStack{
-                HStack{
-                    Image(systemName: "lessthan")
+            ZStack{
+                
+                Color(hex: "F0EDE8")
+                    .ignoresSafeArea()
+                
+                VStack{
+                    HStack{
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor((Color(hex: "71B55C")))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor((Color(hex: "71B55C")))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                        
+                        Rectangle()
+                            .frame(width: 40,height: 3)
+                            .cornerRadius(7)
+                            .foregroundColor(Color(.systemGray4))
+                    }
+                    Text("Great, let's continue.")
+                        .font(.system(size: 13))
+                        .padding(.bottom, 50)
 
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
                     
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color.green)
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                    
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
-                }
-                Text("Great, let's continue.")
-                    .font(.system(size: 13))
+                    Text("What's your gender?")
+                        .font(.system(size: 25))
+                        .padding(.bottom, 40)
+
+                    Button {
+                        if gender == .female {
+                            gender = .none
+                        } else {
+                            gender = .female
+                        }
+                    } label: {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 330,height: 100)
+                                .cornerRadius(7)
+                                .foregroundColor(gender == .female ? .green : .white)
                             
-                Text("What's your gender?")
-                    .font(.system(size: 25))
-        
-                Button {
-                    if gender == .female {
-                        gender = .none
-                    } else {
-                        gender = .female
+                            
+                            Text("Male")
+                                .foregroundColor(gender == .female ? .white : .black)
+                        }
                     }
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 100)
-                            .cornerRadius(7)
-                            .foregroundColor(gender == .female ? .green : .white)
-                        
+                    .tint(.black)
                     
-                        Text("Male")
-                            .foregroundColor(gender == .female ? .white : .black)
+                    Button {
+                        if gender == .male {
+                            gender = .none
+                        } else {
+                            gender = .male
                         }
-                }
-                .tint(.black)
-                
-                Button {
-                    if gender == .male {
-                        gender = .none
-                    } else {
-                        gender = .male
-                    }
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 100)
-                            .cornerRadius(7)
-                            .foregroundColor(gender == .male ? .green : .white)
-                        
-                        Text("Female")
-                            .foregroundColor(gender == .male ? .white : .black)
+                    } label: {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 330,height: 100)
+                                .cornerRadius(7)
+                                .foregroundColor(gender == .male ? .green : .white)
+                            
+                            Text("Female")
+                                .foregroundColor(gender == .male ? .white : .black)
                         }
-                }
-                .tint(.black)
-
-            
-                
-                
-                Text("We use this informationto calculate and provide you")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 13))
-                Text("with daily personlized recommendations.")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 13))
-                
-                Button {
-                    // 다음페이지로 넘어감
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 40)
-                            .cornerRadius(7)
-                            .foregroundColor(gender == .none ? .white : .green)
-                        
-                        Text("Next")
-                            .font(.system(size: 14))
-                            .foregroundColor(gender == .none ? .black : .white)
-
+                    }.padding(.bottom,180)
+                        .tint(.black)
+                    
+                    
+                    
+                    
+                    Text("We use this informationto calculate and provide you")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 13))
+                    Text("with daily personlized recommendations.")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 13))
+                    
+                    NavigationLink {
+                        ThirdStepView()
+                    } label: {
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 330,height: 40)
+                                .cornerRadius(7)
+                                .foregroundColor(gender == .none ? .white : .green)
+                            
+                            Text("Next")
+                                .font(.system(size: 14))
+                                .foregroundColor(gender == .none ? .black : .white)
+                        }
                     }
-                }
-                .tint(.black)
+                    .tint(.black)
+                    .padding(.top,10)
 
+                }
             }
-        }
-        
+            .navigationBarBackButtonHidden()
+
     }
 }
 

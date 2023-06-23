@@ -24,6 +24,11 @@
 		040372612A414F0C000348E5 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372602A414F0B000348E5 /* DiaryView.swift */; };
 		040372632A42822F000348E5 /* DiaryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372622A42822F000348E5 /* DiaryTitleView.swift */; };
 		040372652A429486000348E5 /* PickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372642A429486000348E5 /* PickerData.swift */; };
+		040372692A43D61B000348E5 /* FourthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372682A43D61B000348E5 /* FourthStepView.swift */; };
+		0403726B2A43D623000348E5 /* FifthStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403726A2A43D623000348E5 /* FifthStepView.swift */; };
+		0403726D2A43D62D000348E5 /* SixStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403726C2A43D62D000348E5 /* SixStepView.swift */; };
+		040372732A43DF63000348E5 /* HeightPickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040372722A43DF63000348E5 /* HeightPickerData.swift */; };
+		044A36872A4546F300A5DD11 /* DiaryViewpr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A36862A4546F300A5DD11 /* DiaryViewpr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,11 @@
 		040372602A414F0B000348E5 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
 		040372622A42822F000348E5 /* DiaryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTitleView.swift; sourceTree = "<group>"; };
 		040372642A429486000348E5 /* PickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerData.swift; sourceTree = "<group>"; };
+		040372682A43D61B000348E5 /* FourthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthStepView.swift; sourceTree = "<group>"; };
+		0403726A2A43D623000348E5 /* FifthStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthStepView.swift; sourceTree = "<group>"; };
+		0403726C2A43D62D000348E5 /* SixStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixStepView.swift; sourceTree = "<group>"; };
+		040372722A43DF63000348E5 /* HeightPickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightPickerData.swift; sourceTree = "<group>"; };
+		044A36862A4546F300A5DD11 /* DiaryViewpr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewpr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,16 +126,10 @@
 			children = (
 				040372262A3FF7E5000348E5 /* LifesumApp.swift */,
 				040372282A3FF7E5000348E5 /* ContentView.swift */,
-				040372502A3FF7F2000348E5 /* MainView.swift */,
-				040372542A3FFB99000348E5 /* firstLoginView.swift */,
-				040372562A400291000348E5 /* FirstStepView.swift */,
-				040372582A413AD7000348E5 /* SecondStepView.swift */,
-				0403725C2A4142BA000348E5 /* ThirdStepView.swift */,
-				040372642A429486000348E5 /* PickerData.swift */,
-				0403725E2A414B3A000348E5 /* TapView.swift */,
-				040372602A414F0B000348E5 /* DiaryView.swift */,
-				040372622A42822F000348E5 /* DiaryTitleView.swift */,
-				040372522A3FF9FA000348E5 /* Color+hex.swift */,
+				040372702A43D67C000348E5 /* FirstView */,
+				0403726E2A43D632000348E5 /* StepView */,
+				0403726F2A43D662000348E5 /* Main */,
+				040372712A43D691000348E5 /* Data */,
 				0403722A2A3FF7E8000348E5 /* Assets.xcassets */,
 				0403722C2A3FF7E8000348E5 /* Preview Content */,
 			);
@@ -155,6 +159,49 @@
 				040372432A3FF7E8000348E5 /* LifesumUITestsLaunchTests.swift */,
 			);
 			path = LifesumUITests;
+			sourceTree = "<group>";
+		};
+		0403726E2A43D632000348E5 /* StepView */ = {
+			isa = PBXGroup;
+			children = (
+				040372562A400291000348E5 /* FirstStepView.swift */,
+				040372582A413AD7000348E5 /* SecondStepView.swift */,
+				0403725C2A4142BA000348E5 /* ThirdStepView.swift */,
+				040372682A43D61B000348E5 /* FourthStepView.swift */,
+				0403726A2A43D623000348E5 /* FifthStepView.swift */,
+				0403726C2A43D62D000348E5 /* SixStepView.swift */,
+			);
+			path = StepView;
+			sourceTree = "<group>";
+		};
+		0403726F2A43D662000348E5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0403725E2A414B3A000348E5 /* TapView.swift */,
+				040372602A414F0B000348E5 /* DiaryView.swift */,
+				044A36862A4546F300A5DD11 /* DiaryViewpr.swift */,
+				040372622A42822F000348E5 /* DiaryTitleView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		040372702A43D67C000348E5 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				040372502A3FF7F2000348E5 /* MainView.swift */,
+				040372542A3FFB99000348E5 /* firstLoginView.swift */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
+		040372712A43D691000348E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				040372642A429486000348E5 /* PickerData.swift */,
+				040372722A43DF63000348E5 /* HeightPickerData.swift */,
+				040372522A3FF9FA000348E5 /* Color+hex.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,12 +336,17 @@
 			files = (
 				040372612A414F0C000348E5 /* DiaryView.swift in Sources */,
 				0403725D2A4142BA000348E5 /* ThirdStepView.swift in Sources */,
+				040372732A43DF63000348E5 /* HeightPickerData.swift in Sources */,
 				040372292A3FF7E5000348E5 /* ContentView.swift in Sources */,
+				044A36872A4546F300A5DD11 /* DiaryViewpr.swift in Sources */,
 				040372572A400291000348E5 /* FirstStepView.swift in Sources */,
+				0403726D2A43D62D000348E5 /* SixStepView.swift in Sources */,
 				040372632A42822F000348E5 /* DiaryTitleView.swift in Sources */,
 				040372532A3FF9FA000348E5 /* Color+hex.swift in Sources */,
 				040372512A3FF7F2000348E5 /* MainView.swift in Sources */,
 				040372592A413AD7000348E5 /* SecondStepView.swift in Sources */,
+				0403726B2A43D623000348E5 /* FifthStepView.swift in Sources */,
+				040372692A43D61B000348E5 /* FourthStepView.swift in Sources */,
 				040372272A3FF7E5000348E5 /* LifesumApp.swift in Sources */,
 				040372552A3FFB99000348E5 /* firstLoginView.swift in Sources */,
 				0403725F2A414B3A000348E5 /* TapView.swift in Sources */,

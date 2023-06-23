@@ -11,7 +11,7 @@ import SwiftUI
 struct Life: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DiaryView()
         }
     }
 }

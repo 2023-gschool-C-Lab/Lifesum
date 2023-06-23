@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct DiaryView: View {
+    @State var liter = 0.0
+    
     var body: some View {
         
-    
+        ScrollView {
+
             ZStack{
                 
-                
                 Color(hex: "F2F2F2")
-                    .ignoresSafeArea()
                 
                 VStack{
-                    Spacer()
-                        .frame(height: 140)
+                    DiaryTitleView()
+                        .offset(y: -40)
+                        . frame(height: 150)
                     
+                    Spacer()
+                        .frame(height: 70)
+                    
+                        
                     HStack{
                         Image(systemName: "lessthan")
                             .resizable()
@@ -47,7 +53,7 @@ struct DiaryView: View {
                     }
                     
                     Spacer()
-                        .frame(height:17)
+                        .frame(height:20)
                     
                     ZStack{
                         Rectangle()
@@ -257,14 +263,134 @@ struct DiaryView: View {
                             }
                         }
                         Spacer()
-                            .frame(height:15)
+                            .frame(height:25)
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 340,height: 120)
+                                .cornerRadius(5)
+                                .foregroundColor(.white)
+                                .shadow(radius: 2)
+                            HStack{
+                                
+                                
+                                VStack(alignment: .leading){
+                                    
+                                    
+                                    Text("Activate step counter")
+                                        .font(.system(size: 17))
+                                    
+                                    Spacer()
+                                        .frame(height: 10)
+                                    
+                                    Text("synchronize with Apple Health to automatically")
+                                        .font(.system(size: 12))
+                                    Text("track your morvement")
+                                        .font(.system(size: 12))
+                                    
+                                    
+                                    ZStack{
+                                        Rectangle()
+                                            .cornerRadius(10)
+                                            .frame(width: 140, height: 25)
+                                            .foregroundColor((Color(hex: "84C896")))
+                                        
+                                        Text("ACTIVATE")
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 15))
+                                    }
+                                }
+                            }
+                            
+                        }
+                        
+                        Spacer()
+                            .frame(height:25)
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 340,height: 130)
+                                .cornerRadius(5)
+                                .foregroundColor(.white)
+                                .shadow(radius: 2)
+                            VStack{
+                                HStack{
+                                    Text("\(String(format: "%.1f", liter)) L")
+                                        .font(.system(size: 13))
+                                    
+                                    
+                                    Spacer()
+                                        .frame(width:100)
+                                    
+                                    Text("Water")
+                                        .font(.system(size: 18))
+                                    
+                                    Spacer()
+                                        .frame(width:100)
+                                    
+                                    
+                                    Image(systemName: "ellipsis")
+                                        .resizable()
+                                        .frame(width: 20,height: 5)
+                                        .foregroundColor(.gray)
+                                }
+                                                            
+                                Spacer()
+                                    .frame(height: 20)
+                                
+                                Divider()
+                                    .frame(width: 300)
+                                
+                                Button {
+                                    liter += 0.5
+                                } label: {
+                                    HStack{
+                                        Image(liter < 0.5 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                        
+                                        Image(liter < 1 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                        
+                                        Image(liter < 1.5 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                        
+                                        Image(liter < 2 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                        
+                                        Image(liter < 2.5 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                        
+                                        Image(liter < 3 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                        
+                                        Image(liter < 3.5 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                        
+                                        
+                                        Image(liter < 4 ? "물" : "물들")
+                                            .resizable()
+                                            .frame(width: 30,height: 40)
+                                    }
+                                }
+                            }
+                        }
+                        Spacer()
+                            .frame(height:80)
                     }
                 }
                 
                 
             }
+            .ignoresSafeArea()
         }
     }
+}
 
 
 struct DiaryView_Previews: PreviewProvider {

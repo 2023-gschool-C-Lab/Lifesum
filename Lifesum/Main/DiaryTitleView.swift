@@ -56,8 +56,6 @@ struct DiaryTitleView: View {
                         .foregroundColor(.white)
                 }
             }
-            Spacer()
-                .frame(height: 690)
         }
         
      

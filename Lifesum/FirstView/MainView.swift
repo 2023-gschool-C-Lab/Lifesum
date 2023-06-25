@@ -21,10 +21,15 @@ struct MainView: View {
                     .font(.system(size: 50))
                     .foregroundColor(Color.white)
                 
-                Text("R")
-                    .font(.system(size: 10))
-                    .foregroundColor(Color.white)
-                
+                ZStack{
+                    
+                    Image(systemName: "circle")
+                        .foregroundColor(.white)
+                    
+                    Text("R")
+                        .font(.system(size: 10))
+                        .foregroundColor(Color.white)
+                }
             }
         }
     }

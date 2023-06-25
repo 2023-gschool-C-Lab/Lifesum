@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-enum GoalState {
-    case loseWeight
-    case maintainWeight
-    case gainWeight
+enum Gender {
+    case female
+    case male
     case none
 }
 
-struct FirstStepView: View {
-    @State var goalState: GoalState = .none
+struct SecondStepView: View {
+    @State var gender: Gender = .none
     
     var body: some View {
         
+            
         ZStack{
             
             Color(hex: "F0EDE8")
@@ -26,17 +26,16 @@ struct FirstStepView: View {
             
             VStack{
                 HStack{
-                    Image(systemName: "lessthan")
-
-                    Rectangle()
-                        .frame(width: 40,height: 3)
-                        .cornerRadius(7)
-                        .foregroundColor(Color.green)
                     
                     Rectangle()
                         .frame(width: 40,height: 3)
                         .cornerRadius(7)
-                        .foregroundColor(Color(.systemGray4))
+                        .foregroundColor((Color(hex: "71B55C")))
+                    
+                    Rectangle()
+                        .frame(width: 40,height: 3)
+                        .cornerRadius(7)
+                        .foregroundColor((Color(hex: "71B55C")))
                     
                     Rectangle()
                         .frame(width: 40,height: 3)
@@ -58,74 +57,57 @@ struct FirstStepView: View {
                         .cornerRadius(7)
                         .foregroundColor(Color(.systemGray4))
                 }
-                
-                Text("Let's get to know you better!")
+                Text("Great, let's continue.")
                     .font(.system(size: 13))
+                    .padding(.bottom, 50)
                 
                 
-                Text("What goal do you have")
+                Text("What's your gender?")
                     .font(.system(size: 25))
-                Text("in mind?")
-                    .font(.system(size: 25))
-
-                
+                    .padding(.bottom, 40)
                 
                 Button {
-                    if goalState == .loseWeight {
-                        goalState = .none
+                    if gender == .female {
+                        gender = .none
                     } else {
-                        goalState = .loseWeight
+                        gender = .female
                     }
                 } label: {
                     ZStack{
                         Rectangle()
-                            .frame(width: 330,height: 80)
+                            .frame(width: 330,height: 100)
                             .cornerRadius(7)
-                            .foregroundColor(goalState == .loseWeight ? .green : .white)
-                        Text("Lose weight")
-                            .foregroundColor(goalState == .loseWeight ? .white : .black)
-                    }
-                }
-                .tint(.black)
-                
-                Button {
-                    if goalState == .maintainWeight {
-                        goalState = .none
-                    } else {
-                        goalState = .maintainWeight
-                    }
-                } label: {
-                    ZStack{
-                        Rectangle()
-                            .frame(width: 330,height: 80)
-                            .cornerRadius(7)
-                            .foregroundColor(goalState == .maintainWeight ? .green : .white)
+                            .foregroundColor(gender == .female ? .green : .white)
                         
-                        Text("Maintain weight")
-                            .foregroundColor(goalState == .maintainWeight ? .white : .black)
-                        }
+                        
+                        Text("Male")
+                            .foregroundColor(gender == .female ? .white : .black)
+                    }
                 }
                 .tint(.black)
-
+                
                 Button {
-                    if goalState == .gainWeight {
-                        goalState = .none
+                    if gender == .male {
+                        gender = .none
                     } else {
-                        goalState = .gainWeight
+                        gender = .male
                     }
                 } label: {
                     ZStack{
                         Rectangle()
-                            .frame(width: 330,height: 80)
+                            .frame(width: 330,height: 100)
                             .cornerRadius(7)
-                            .foregroundColor(goalState == .gainWeight ? .green : .white)
+                            .foregroundColor(gender == .male ? .green : .white)
                         
-                        Text("Gain weight")
-                            .foregroundColor(goalState == .gainWeight ? .white : .black)
+                        Text("Female")
+                            .foregroundColor(gender == .male ? .white : .black)
                     }
-                }
-                .tint(.black)
-            
+                }.padding(.bottom,180)
+                    .tint(.black)
+                
+                
+                
+                
                 Text("We use this informationto calculate and provide you")
                     .multilineTextAlignment(.center)
                     .font(.system(size: 13))
@@ -133,31 +115,32 @@ struct FirstStepView: View {
                     .multilineTextAlignment(.center)
                     .font(.system(size: 13))
                 
-                Button {
-                    // 다음페이지로 넘어감
+                NavigationLink {
+                    ThirdStepView()
                 } label: {
                     ZStack{
                         Rectangle()
                             .frame(width: 330,height: 40)
                             .cornerRadius(7)
-                            .foregroundColor(goalState == .none ? .white : .green)
+                            .foregroundColor(gender == .none ? .white : .green)
                         
                         Text("Next")
                             .font(.system(size: 14))
-                            .foregroundColor(goalState == .none ? .black : .white)
-
+                            .foregroundColor(gender == .none ? .black : .white)
                     }
                 }
                 .tint(.black)
-
+                .padding(.top,10)
+                
             }
+            
+            .navigationBarBackButtonHidden()
         }
-        
     }
 }
 
-struct FirstStepView_Previews: PreviewProvider {
+struct SecondStepView_Previews: PreviewProvider {
     static var previews: some View {
-        FirstStepView()
+        SecondStepView()
     }
 }

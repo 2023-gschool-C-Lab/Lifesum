@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct LifesumApp: App {
+struct Life: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DiaryView()
         }
     }
 }
